@@ -1,8 +1,7 @@
 
 
-
-$primary-color: #ed545d;
-
+@import 'reset.scss';
+@import 'costant.scss';
 
 body{
 	background: $primary-color;
