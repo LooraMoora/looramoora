@@ -3,6 +3,54 @@
 @import 'reset.scss';
 @import 'costant.scss';
 
-body{
+body{	
+	background: #fff;
+}
+
+.logo{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -125px;
+	margin-left: -125px;
+	width: 250px;
+	height: 250px;
+	background: url(../asset/logo-looramoora.png) no-repeat;
+	background-size: cover;
+	opacity: 1;
+	-webkit-transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
+}         
+	
+.line{
+	position: fixed;
+	display: block;
 	background: $primary-color;
+	box-shadow: 0 0 .5 rgba(0,0,0,.2);
+	$dimension: 8px;
+	$distance: 16px;
+	&.line-top{
+		top: $distance;
+		left: $distance;
+		right: $distance;
+		height: $dimension;
+	}
+	&.line-left{
+		top: $distance;
+		left: $distance;
+		bottom: $distance;
+		width: $dimension;
+	}
+	&.line-bottom{
+		left: $distance;
+		bottom: $distance;
+		right: $distance;
+		height: $dimension;
+	}
+	&.line-right{
+		top: $distance;
+		bottom: $distance;
+		right: $distance;
+		width: $dimension;
+	}
 }

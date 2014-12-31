@@ -46,6 +46,46 @@ table {
   border-spacing: 0; }
 
 body {
-  background: #ed545d; }
+  background: #fff; }
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -125px;
+  margin-left: -125px;
+  width: 250px;
+  height: 250px;
+  background: url(../asset/logo-looramoora.png) no-repeat;
+  background-size: cover;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out; }
+
+.line {
+  position: fixed;
+  display: block;
+  background: #ed545d;
+  box-shadow: 0 0 0.5 rgba(0, 0, 0, 0.2); }
+  .line.line-top {
+    top: 16px;
+    left: 16px;
+    right: 16px;
+    height: 8px; }
+  .line.line-left {
+    top: 16px;
+    left: 16px;
+    bottom: 16px;
+    width: 8px; }
+  .line.line-bottom {
+    left: 16px;
+    bottom: 16px;
+    right: 16px;
+    height: 8px; }
+  .line.line-right {
+    top: 16px;
+    bottom: 16px;
+    right: 16px;
+    width: 8px; }
 
 /*# sourceMappingURL=style.css.map */
