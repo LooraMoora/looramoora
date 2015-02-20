@@ -2,26 +2,64 @@
 
 @import 'reset.scss';
 @import 'costant.scss';
+@import 'font/font-awesome.scss';
+@import url(http://fonts.googleapis.com/css?family=Khula:400,700);
+
 
 body{	
 	background: #fff;
+	font: 28px/36px $font-primary;
+	color: $gray-middle;
+}
+
+.content{
+	position: absolute;
+	top: 47%;
+	left: 50%;
+	margin-top: -125px;
+	margin-left: -140px;
+	width: 280px;
 }
 
 .logo{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin-top: -125px;
-	margin-left: -125px;
 	width: 250px;
 	height: 250px;
+	margin: 0 auto 40px;
 	background: url(../asset/logo-looramoora.png) no-repeat;
 	background-size: cover;
 	opacity: 1;
 	-webkit-transition: opacity 0.3s ease-in-out;
 	transition: opacity 0.3s ease-in-out;
-}         
+}        
+
+h1{
+	font-weight: 200;
+	font-size: 28px;
+}
+
+.align-center{
+	text-align: center;
+}
+
+a{
+	text-decoration: none;
+	color: $primary-color;
+	&:hover{
+		opacity: 0.7;
+	}
+} 
 	
+.nav{
+	position: absolute;
+	top: 60px;
+	right: 60px;
+
+	width: 40px;
+	height: 40px;
+
+	text-align: right;
+}
+
 .line{
 	position: fixed;
 	display: block;
