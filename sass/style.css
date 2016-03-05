@@ -1841,6 +1841,9 @@ body {
   background: #fff;
   font: 28px/36px "Khula", sans-serif;
   color: #ABB6B8; }
+  @media screen and (max-width: 768px) {
+    body {
+      font: 20px/28px "Khula", sans-serif; } }
 
 .content {
   position: absolute;
@@ -1859,10 +1862,16 @@ body {
   opacity: 1;
   -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out; }
+  @media screen and (max-width: 768px) {
+    .logo {
+      width: 120px;
+      height: 120px; } }
 
 h1 {
-  font-weight: 200;
-  font-size: 28px; }
+  font-weight: 200; }
+  @media screen and (max-width: 768px) {
+    h1 {
+      padding: 0 40px; } }
 
 .align-center {
   text-align: center; }
