@@ -1,0 +1,11 @@
+### OSX ###
+.DS_Store
+
+### Sass ###
+*.css.map
+.sass-cache
+
+
+### Jekyll ###
+_site
+.jekyll-metadata
