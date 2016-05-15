@@ -5,7 +5,6 @@
 *.css.map
 .sass-cache
 
-
 ### Jekyll ###
 _site
 .jekyll-metadata
