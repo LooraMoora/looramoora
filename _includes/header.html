@@ -1,21 +1,10 @@
 <header class="site-header">
-
-  <div class="nav nav-tr">
-    <a class="fa fa-twitter" id="button-twitter" href="https://twitter.com/LooraMoora"></a>
+  <div class="wrapper">
+    <ul class="nav-main">
+      <a class="page-link" href="{{ "" | prepend: site.url }}">Home</a>
+      {% for page in site.pages %}
+        {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
+      {% endfor %}
+    </ul>
   </div>
-  <div class="nav nav-tl">
-	    <a class="fa fa-envelope-o" id="button-email" href="mailto:hello@looramoora.com"></a>
-  </div>
-  <div class="nav nav-br">
-    <a class="fa fa-dribbble" id="button-dribbble" href="https://dribbble.com/LooraMoora"></a>
-  </div>
-  <div class="nav nav-bl">
-    <a class="fa fa-linkedin-square" id="button-linkedin" href="https://it.linkedin.com/in/looramoora/en"></a>
-  </div>
-
-  <div class="content">
-		<div class="logo"></div>
-    <h1 class="align-center">UX & UI Designer guided by people</h1>
-  </div>
-
 </header>

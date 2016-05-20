@@ -4,4 +4,14 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+I’m a Product Designer who think about the Person, human behaviours and emotions.
+My purpose is understanding and driving experiences: I have a strong desire to find product problems and customer needs and to solve them with design.
+Make life easier for huge user bases products is my persuasion.
+
+Everything starts with right questions: from the answers I create sketchings on paper to identify as many solutions it’s needed to achieve goals. Avoiding not working sketch, I convert conveying ones in working prototypes, taking care about interactions, animations and flows.
+I share prototype with designers, stakeholders and developers to collect feedback in order to refine the prototype and taking care about the details.
+
+After that I iterate in Agile process with developers to give life to the prototype.
+I have experience in UI design of iOS and Android native apps, following two different operating system patterns, and responsive web-application too.
+
+I have a deep interest of psychology and recently I’m discovering and studing UX research methods.
