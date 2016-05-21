@@ -16,9 +16,9 @@ body{
 .wrapper{
 	max-width: 960px;
 	margin: 0 auto;
-	padding: 10px;
-	@media screen and (max-width: 768px) {
-		padding: 40px;
+	padding: 40px;
+	@media screen and (min-width: 768px) {
+		padding: 10px;
 	}
 }
 
@@ -42,57 +42,58 @@ body{
 }
 
 .logo-home{
-	font: 28px/36px $font-primary;
-	@media screen and (max-width: 768px) {
-		font: 20px/28px $font-primary;
+	font: 20px/28px $font-primary;
+	@media screen and (min-width: 768px) {
+		font: 28px/36px $font-primary;
 	}
 }
 
 .circles{
-		height: 250px;
+		height: 120px;
 		margin-bottom: 20px;
-		@media screen and (max-width: 768px) {
-			height: 120px;
+		@media screen and (min-width: 768px) {
+			height: 250px;
 		}
 }
 
 .circle{
-	width: 250px;
-	height: 250px;
+	width: 120px;
+	height: 120px;
 	position: absolute;
 	left: 50%;
 	margin: 0 auto 40px -125px;
 	opacity: 1;
 	-webkit-transition: opacity 0.3s ease-in-out;
 	transition: opacity 0.3s ease-in-out;
-	@media screen and (max-width: 768px) {
-		width: 120px;
-		height: 120px;
+	@media screen and (min-width: 768px) {
+		width: 250px;
+		height: 250px;
 	}
 }
 
 .logo{
 	background: url(../asset/logo-looramoora.png) no-repeat;
 	background-size: cover;
-	margin-left: -235px;
-	@media screen and (max-width: 768px) {
-		margin-left: -113px;
+	margin-left: -113px;
+	@media screen and (min-width: 768px) {
+		margin-left: -235px;
 	}
 }
 
 .avatar{
 	background: url(../asset/looramoora-photo.png) no-repeat;
 	background-size: cover;
-	margin-left: -15px;
-	@media screen and (max-width: 768px) {
-		margin-left: -7px;
+	margin-left: -7px;
+	@media screen and (min-width: 768px) {
+		margin-left: -15px;
 	}
 }
 
 .claim{
 	font-weight: 200;
-	@media screen and (max-width: 768px) {
-		padding: 0 40px;
+	padding: 0 40px;
+	@media screen and (min-width: 768px) {
+		padding: 0;
 	}
 }
 
@@ -120,42 +121,43 @@ p{
 	left: 50%;
 	width: 200px;
 	height: 40px;
-	font: 28px/36px $font-primary;
 	text-align: center;
-	@media screen and (max-width: 768px) {
-		font: 20px/28px $font-primary;
+	@media screen and (min-width: 768px) {
+		font: 28px/36px $font-primary;
 	}
 }
 
-.line{
-	position: fixed;
-	display: block;
-	background: $primary-color;
-	box-shadow: 0 0 .5 rgba(0,0,0,.2);
-	$dimension: 8px;
-	$distance: 16px;
-	&.line-top{
-		top: $distance;
-		left: $distance;
-		right: $distance;
-		height: $dimension;
-	}
-	&.line-left{
-		top: $distance;
-		left: $distance;
-		bottom: $distance;
-		width: $dimension;
-	}
-	&.line-bottom{
-		left: $distance;
-		bottom: $distance;
-		right: $distance;
-		height: $dimension;
-	}
-	&.line-right{
-		top: $distance;
-		bottom: $distance;
-		right: $distance;
-		width: $dimension;
+@media screen and (min-width: 768px) {
+	.line{
+		position: fixed;
+		display: block;
+		background: $primary-color;
+		box-shadow: 0 0 .5 rgba(0,0,0,.2);
+		$dimension: 8px;
+		$distance: 16px;
+		&.line-top{
+			top: $distance;
+			left: $distance;
+			right: $distance;
+			height: $dimension;
+		}
+		&.line-left{
+			top: $distance;
+			left: $distance;
+			bottom: $distance;
+			width: $dimension;
+		}
+		&.line-bottom{
+			left: $distance;
+			bottom: $distance;
+			right: $distance;
+			height: $dimension;
+		}
+		&.line-right{
+			top: $distance;
+			bottom: $distance;
+			right: $distance;
+			width: $dimension;
+		}
 	}
 }
