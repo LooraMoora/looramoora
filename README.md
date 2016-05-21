@@ -1,2 +1,2 @@
-looramoora.github.io
+looramoora
 ====================
