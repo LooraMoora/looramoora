@@ -4,27 +4,29 @@
 
 @import 'reset.scss';
 @import 'costant.scss';
+@import 'grid.scss';
 @import 'font-awesome.scss';
 @import url(http://fonts.googleapis.com/css?family=Khula:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lora:400,700);
 
 
 body{
 	background: #fff;
-	font: 21px/32px $font-primary;
-	color: $gray-middle;
-}
-.wrapper{
-	max-width: 960px;
-	margin: 0 auto;
-	padding: 40px;
-	@media screen and (min-width: 768px) {
-		padding: 10px;
-	}
+	font: 21px/32px $font-sansserif;
+	color: $gray-strong;
 }
 
 .site-header{
-	height: 50px;
-	width: 100%;
+	height: 30px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 30px;
+}
+
+.site-footer{
+	font: 18px/27px $font-sansserif;
+	color: $gray-middle;
+	text-align: center;
 }
 
 .nav-main{
@@ -42,9 +44,9 @@ body{
 }
 
 .logo-home{
-	font: 20px/28px $font-primary;
+	font: 20px/28px $font-sansserif;
 	@media screen and (min-width: 768px) {
-		font: 28px/36px $font-primary;
+		font: 28px/36px $font-sansserif;
 	}
 }
 
@@ -92,9 +94,17 @@ body{
 .claim{
 	font-weight: 200;
 	padding: 0 40px;
+	font-family: $font-sansserif;
+	color: $gray-middle;
+	font: 20px/28px $font-sansserif;
 	@media screen and (min-width: 768px) {
+		font: 28px/36px $font-sansserif;
 		padding: 0;
 	}
+}
+
+h1{
+		font: 48px/72px $font-serif;
 }
 
 .align-center{
@@ -114,16 +124,23 @@ p{
 	margin-bottom: 16px;
 }
 
+.home-content{
+	margin-top: 100%;
+	margin-bottom: 10%;
+}
+
 .nav-social{
 	position: absolute;
 	bottom: 40px;
-	margin: 0 -100px;
+	margin: 0 -200px;
 	left: 50%;
-	width: 200px;
+	width: 400px;
 	height: 40px;
 	text-align: center;
+	font-size: 14px;
+	text-transform: uppercase;
 	@media screen and (min-width: 768px) {
-		font: 28px/36px $font-primary;
+		font: 14px/36px $font-sansserif;
 	}
 }
 
