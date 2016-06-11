@@ -3,33 +3,54 @@
 
   {% include head.html %}
 
+
   <body>
 
-    <div class="nav-social">
-      <a class="fa fa-envelope-o" id="button-email" href="mailto:hello@looramoora.com"> email</a>
-      <a class="fa fa-twitter" id="button-twitter" href="https://twitter.com/LooraMoora"> twitter</a>
-      <a class="fa fa-linkedin-square" id="button-linkedin" href="https://it.linkedin.com/in/looramoora/en"> linkedin</a>
-      <a class="fa fa-dribbble" id="button-dribbble" href="https://dribbble.com/LooraMoora"> dribbble</a>
-    </div>
+    {% include header.html %}
 
-    <div class="content-home logo-home">
+    <!--<div class="content-home logo-home">
 
       <div class="circles">
         <div class="circle logo"></div>
-        <div class="circle avatar"></div>
+        <div class="circle avatar"></div
+      </div>-->
+
+      <div class="content-home clearfix">
+
+        <div class="col-sm-8 col-sm-offset-2">
+          <h1 class="align-center">
+            I’m obsessed with people:<br>
+            human interaction and reaction<br>
+            with digital products
+          </h1>
+        </div>
+
+        <!--<h1 class="name-home align-center">
+          Laura Morelli
+        </h1>
+
+        <h2 class="claim-home align-center">
+          Product Designer<br>
+          guided by humans
+        </h2>
+
+        <div class="photo-home">
+        </div>-->
+
+
       </div>
-
-      <h1 class="claim align-center">UX & UI Designer guided by humans</h1>
-
-    </div>
-
 
             {{ content }}
 
 
+    {% include footer.html %}
+
+    <!--<div class="home site-header">
+      {% include nav.html %}
+    </div>-->
 
 
-    {% include frame.html %}
+    <!--{% include frame.html %}-->
 
   </body>
 

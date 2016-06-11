@@ -9,44 +9,149 @@
 @import url(http://fonts.googleapis.com/css?family=Khula:400,700);
 @import url(http://fonts.googleapis.com/css?family=Lora:400,700);
 
-
 body{
 	background: #fff;
-	font: 21px/32px $font-sansserif;
+	font: $normal $font-sansserif;
 	color: $gray-strong;
 }
 
+
+.page-content{
+	padding-top: 120px;
+}
+
 .site-header{
+	top: 0;
 	height: 30px;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	margin-bottom: 30px;
+	border-bottom: 1px $gray-light solid;
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+	background: #fff;
+	&.home{
+		bottom: 0;
+		border-bottom: none;
+		border-top: 1px $gray-light solid;
+		margin-bottom: 0;
+	}
 }
 
 .site-footer{
-	font: 18px/27px $font-sansserif;
-	color: $gray-middle;
+	margin-top: 40px;
+	padding-top: 60px;
+	font: $medium $font-sansserif;
 	text-align: center;
+	width: 100%;
+	background: url(../asset/line.png) no-repeat top;
+	background-size: 60px 10px;
+}
+
+.photo{
+		width: 80px;
+		height: 80px;
+		background: url(../asset/photo.png) no-repeat;
+		background-size: 80px 80px;
+		margin: 0 auto 32px;
+}
+
+.name-footer{
+	font: $normal $font-serif;
+}
+
+.social-link{
+	font: $small $font-sansserif;
+	color: $gray-middle;
+	a{
+		color: $gray-middle;
+		&:hover{
+			color: $gray-strong;
+		}
+	}
 }
 
 .nav-main{
-	float: right;
+	height: 40px;
+	background: #fff;
+	ul {
+		width: 100%;
+		li{
+			width: 20%;
+			margin: 0 6.6666%;
+			float: left;
+			text-align: center;
+			a{
+				font: $tiny $font-sansserif;
+				text-transform: uppercase;
+				padding-top: 20px;
+				color: $gray-middle;
+				&.page-link:before{
+					display: block;
+					content:"";
+					height: 12px;
+					width: 12px;
+					margin: 0 auto;
+				}
+				&.page-link-home:before{
+					background: url(../asset/icon-circle-tiny.png) no-repeat;
+					background-size: cover;
+				}
+				&.page-link-home:hover:before,
+				&.active.page-link-home:before{
+					background: url(../asset/icon-circle-pink-tiny.png) no-repeat;
+					background-size: cover;
+				}
+				&.page-link-works:before{
+					background: url(../asset/icon-square-tiny.png) no-repeat;
+					background-size: cover;
+				}
+				&.page-link-works:hover:before,
+				&.active.page-link-works:before{
+					background: url(../asset/icon-square-pink-tiny.png) no-repeat;
+					background-size: cover;
+				}
+				&.page-link-life:before{
+					background: url(../asset/icon-arrow-tiny.png) no-repeat;
+					background-size: cover;
+				}
+				&.page-link-life:hover:before,
+				&.active.page-link-life:before{
+					background: url(../asset/icon-arrow-pink-tiny.png) no-repeat;
+					background-size: cover;
+				}
+				&.page-link-about:before{
+					background: url(../asset/icon-line-tiny.png) no-repeat;
+					background-size: cover;
+				}
+				&.page-link-about:hover:before,
+				&.active.page-link-about:before{
+					background: url(../asset/icon-line-pink-tiny.png) no-repeat;
+					background-size: cover;
+				}
+				&.page-link-contact:before{
+					background: url(../asset/icon-plus-tiny.png) no-repeat;
+					background-size: cover;
+				}
+				&.page-link-contact:hover:before{
+					background: url(../asset/icon-plus-pink-tiny.png) no-repeat;
+					background-size: cover;
+				}
+				&:hover,
+				&.active{
+					color: $gray-strong;
+				}
+			}
+		}
+	}
 }
 
-
-.content-home{
-	position: absolute;
-	top: 47%;
-	left: 50%;
-	margin-top: -125px;
-	margin-left: -140px;
-	width: 280px;
-}
 
 .logo-home{
-	font: 20px/28px $font-sansserif;
+	font: $normal $font-sansserif;
 	@media screen and (min-width: 768px) {
-		font: 28px/36px $font-sansserif;
+		font: $big $font-sansserif;
 	}
 }
 
@@ -91,20 +196,53 @@ body{
 	}
 }
 
-.claim{
-	font-weight: 200;
-	padding: 0 40px;
-	font-family: $font-sansserif;
-	color: $gray-middle;
-	font: 20px/28px $font-sansserif;
+.content-home{
+	margin-top: 120px;
 	@media screen and (min-width: 768px) {
-		font: 28px/36px $font-sansserif;
-		padding: 0;
+		margin-top: 160px;
+	}
+}
+
+
+.claim-home{
+	font-weight: 200;
+	padding: 0 40px 40px;
+	color: $gray-middle;
+	font: $normal $font-sansserif;
+	@media screen and (min-width: 768px) {
+		font: $big $font-sansserif;
+		padding: 0 0 48px;
+	}
+}
+
+.photo-home{
+	width: 120px;
+	height: 120px;
+	position: relative;
+	left: 50%;
+	margin: 0 auto 40px -60px;
+	background: url(../asset/photo.png) no-repeat;
+	background-size: cover;
+	@media screen and (min-width: 768px) {
+		width: 200px;
+		height: 200px;
+		margin: 0 auto 40px -100px;
+	}
+}
+
+.phylosopy{
+	text-align: center;
+	font: $normal $font-serif;
+	@media screen and (min-width: 768px) {
+		font: $big $font-serif;
 	}
 }
 
 h1{
-		font: 48px/72px $font-serif;
+		font: $big $font-serif;
+		@media screen and (min-width: 768px) {
+			font: $huge $font-serif;
+		}
 }
 
 .align-center{
@@ -119,9 +257,9 @@ a{
 	}
 }
 
+h1,
 p{
-	margin-top: 16px;
-	margin-bottom: 16px;
+	margin-bottom: 32px;
 }
 
 .home-content{
