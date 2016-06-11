@@ -147,46 +147,6 @@ body{
 	}
 }
 
-
-.logo-home{
-	font: $normal $font-sansserif;
-	@media screen and (min-width: 768px) {
-		font: $big $font-sansserif;
-	}
-}
-
-.circles{
-		height: 120px;
-		margin-bottom: 20px;
-		@media screen and (min-width: 768px) {
-			height: 250px;
-		}
-}
-
-.circle{
-	width: 120px;
-	height: 120px;
-	position: absolute;
-	left: 50%;
-	margin: 0 auto 40px -125px;
-	opacity: 1;
-	-webkit-transition: opacity 0.3s ease-in-out;
-	transition: opacity 0.3s ease-in-out;
-	@media screen and (min-width: 768px) {
-		width: 250px;
-		height: 250px;
-	}
-}
-
-.logo{
-	background: url(../asset/logo-looramoora.png) no-repeat;
-	background-size: cover;
-	margin-left: -113px;
-	@media screen and (min-width: 768px) {
-		margin-left: -235px;
-	}
-}
-
 .avatar{
 	background: url(../asset/looramoora-photo.png) no-repeat;
 	background-size: cover;
@@ -200,41 +160,6 @@ body{
 	margin-top: 120px;
 	@media screen and (min-width: 768px) {
 		margin-top: 160px;
-	}
-}
-
-
-.claim-home{
-	font-weight: 200;
-	padding: 0 40px 40px;
-	color: $gray-middle;
-	font: $normal $font-sansserif;
-	@media screen and (min-width: 768px) {
-		font: $big $font-sansserif;
-		padding: 0 0 48px;
-	}
-}
-
-.photo-home{
-	width: 120px;
-	height: 120px;
-	position: relative;
-	left: 50%;
-	margin: 0 auto 40px -60px;
-	background: url(../asset/photo.png) no-repeat;
-	background-size: cover;
-	@media screen and (min-width: 768px) {
-		width: 200px;
-		height: 200px;
-		margin: 0 auto 40px -100px;
-	}
-}
-
-.phylosopy{
-	text-align: center;
-	font: $normal $font-serif;
-	@media screen and (min-width: 768px) {
-		font: $big $font-serif;
 	}
 }
 
@@ -279,40 +204,5 @@ p{
 	text-transform: uppercase;
 	@media screen and (min-width: 768px) {
 		font: 14px/36px $font-sansserif;
-	}
-}
-
-@media screen and (min-width: 768px) {
-	.line{
-		position: fixed;
-		display: block;
-		background: $primary-color;
-		box-shadow: 0 0 .5 rgba(0,0,0,.2);
-		$dimension: 8px;
-		$distance: 16px;
-		&.line-top{
-			top: $distance;
-			left: $distance;
-			right: $distance;
-			height: $dimension;
-		}
-		&.line-left{
-			top: $distance;
-			left: $distance;
-			bottom: $distance;
-			width: $dimension;
-		}
-		&.line-bottom{
-			left: $distance;
-			bottom: $distance;
-			right: $distance;
-			height: $dimension;
-		}
-		&.line-right{
-			top: $distance;
-			bottom: $distance;
-			right: $distance;
-			width: $dimension;
-		}
 	}
 }

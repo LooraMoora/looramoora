@@ -17,4 +17,16 @@ $(document).ready(function(){
   		ga('send', 'event', 'Link', 'click', 'Linkedin Button');
 	});
 
+	$('#nav-home').on('click', function() {
+			ga('send', 'event', 'Link', 'click', 'Nav Home Button');
+	});
+
+	$('#nav-about').on('click', function() {
+			ga('send', 'event', 'Link', 'click', 'Nav About Button');
+	});
+
+	$('#nav-contact').on('click', function() {
+			ga('send', 'event', 'Link', 'click', 'Nav Contact Button');
+	});
+
 });
