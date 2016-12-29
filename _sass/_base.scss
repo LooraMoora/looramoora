@@ -98,16 +98,16 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $grey-color-dark;
+    color: $brand-color;
     text-decoration: none;
     position: relative;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: lighten($brand-color, 15%);
     }
 
     &:hover {
-        color: darken($brand-color, 35%);
+        color: lighten($brand-color, 15%);
     }
 }
 

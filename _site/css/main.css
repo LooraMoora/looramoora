@@ -74,13 +74,13 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #424147;
+  color: #ed545d;
   text-decoration: none;
   position: relative; }
   a:visited {
-    color: #dd1723; }
+    color: #f4999f; }
   a:hover {
-    color: #810e14; }
+    color: #f4999f; }
 
 /**
  * Blockquotes
@@ -461,6 +461,8 @@ h1 {
   font: 15px / 22px "Khula", sans-serif; }
   .social-link a {
     color: #ABB6B8; }
+    .social-link a:hover {
+      color: #55545B; }
 
 /**
  * Syntax highlighting styles

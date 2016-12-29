@@ -26,6 +26,5 @@ collections:
 permalink: /:categories/:title
 timezone: Europe/Rome
 
-
 # Build settings
 markdown: kramdown

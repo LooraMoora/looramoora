@@ -138,5 +138,8 @@ h1{
 	font: $small $base-font-family-sansserif;
 	a{
 		color: $grey-color-middle;
+		&:hover {
+    	color: #55545B;
+		}
 	}
 }
