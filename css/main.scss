@@ -1,0 +1,208 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+@import 'reset.scss';
+@import 'costant.scss';
+@import 'grid.scss';
+@import 'font-awesome.scss';
+@import url(http://fonts.googleapis.com/css?family=Khula:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lora:400,700);
+
+body{
+	background: #fff;
+	font: $normal $font-sansserif;
+	color: $gray-strong;
+}
+
+
+.page-content{
+	padding-top: 120px;
+}
+
+.site-header{
+	top: 0;
+	height: 30px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 30px;
+	border-bottom: 1px $gray-light solid;
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+	background: #fff;
+	&.home{
+		bottom: 0;
+		border-bottom: none;
+		border-top: 1px $gray-light solid;
+		margin-bottom: 0;
+	}
+}
+
+.site-footer{
+	margin-top: 40px;
+	padding-top: 60px;
+	font: $medium $font-sansserif;
+	text-align: center;
+	width: 100%;
+	background: url(../asset/line.png) no-repeat top;
+	background-size: 60px 10px;
+}
+
+.photo{
+		width: 80px;
+		height: 80px;
+		background: url(../asset/photo.png) no-repeat;
+		background-size: 80px 80px;
+		margin: 0 auto 32px;
+}
+
+.name-footer{
+	font: $normal $font-serif;
+}
+
+.social-link{
+	font: $small $font-sansserif;
+	color: $gray-middle;
+	a{
+		color: $gray-middle;
+		&:hover{
+			color: $gray-strong;
+		}
+	}
+}
+
+.nav-main{
+	height: 40px;
+	background: #fff;
+	ul {
+		width: 100%;
+		li{
+			width: 20%;
+			margin: 0 6.6666%;
+			float: left;
+			text-align: center;
+			a{
+				font: $tiny $font-sansserif;
+				text-transform: uppercase;
+				padding-top: 20px;
+				color: $gray-middle;
+				&.page-link:before{
+					display: block;
+					content:"";
+					height: 12px;
+					width: 12px;
+					margin: 0 auto;
+				}
+				&.page-link-home:before{
+					background: url(../asset/icon-circle-tiny.png) no-repeat;
+					background-size: cover;
+				}
+				&.page-link-home:hover:before,
+				&.active.page-link-home:before{
+					background: url(../asset/icon-circle-pink-tiny.png) no-repeat;
+					background-size: cover;
+				}
+				&.page-link-works:before{
+					background: url(../asset/icon-square-tiny.png) no-repeat;
+					background-size: cover;
+				}
+				&.page-link-works:hover:before,
+				&.active.page-link-works:before{
+					background: url(../asset/icon-square-pink-tiny.png) no-repeat;
+					background-size: cover;
+				}
+				&.page-link-life:before{
+					background: url(../asset/icon-arrow-tiny.png) no-repeat;
+					background-size: cover;
+				}
+				&.page-link-life:hover:before,
+				&.active.page-link-life:before{
+					background: url(../asset/icon-arrow-pink-tiny.png) no-repeat;
+					background-size: cover;
+				}
+				&.page-link-about:before{
+					background: url(../asset/icon-line-tiny.png) no-repeat;
+					background-size: cover;
+				}
+				&.page-link-about:hover:before,
+				&.active.page-link-about:before{
+					background: url(../asset/icon-line-pink-tiny.png) no-repeat;
+					background-size: cover;
+				}
+				&.page-link-contact:before{
+					background: url(../asset/icon-plus-tiny.png) no-repeat;
+					background-size: cover;
+				}
+				&.page-link-contact:hover:before{
+					background: url(../asset/icon-plus-pink-tiny.png) no-repeat;
+					background-size: cover;
+				}
+				&:hover,
+				&.active{
+					color: $gray-strong;
+				}
+			}
+		}
+	}
+}
+
+.avatar{
+	background: url(../asset/looramoora-photo.png) no-repeat;
+	background-size: cover;
+	margin-left: -7px;
+	@media screen and (min-width: 768px) {
+		margin-left: -15px;
+	}
+}
+
+.content-home{
+	margin-top: 120px;
+	@media screen and (min-width: 768px) {
+		margin-top: 160px;
+	}
+}
+
+h1{
+		font: $big $font-serif;
+		@media screen and (min-width: 768px) {
+			font: $huge $font-serif;
+		}
+}
+
+.align-center{
+	text-align: center;
+}
+
+a{
+	text-decoration: none;
+	color: $primary-color;
+	&:hover{
+		opacity: 0.7;
+	}
+}
+
+h1,
+p{
+	margin-bottom: 32px;
+}
+
+.home-content{
+	margin-top: 100%;
+	margin-bottom: 10%;
+}
+
+.nav-social{
+	position: absolute;
+	bottom: 40px;
+	margin: 0 -200px;
+	left: 50%;
+	width: 400px;
+	height: 40px;
+	text-align: center;
+	font-size: 14px;
+	text-transform: uppercase;
+	@media screen and (min-width: 768px) {
+		font: 14px/36px $font-sansserif;
+	}
+}

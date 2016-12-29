@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+
+<div class="col-sm-8 col-sm-offset-2">
+
+  <h1 class="page-heading">Works</h1>
+
+  <ul class="post-list">
+    {% for post in site.works %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+
+</div>
