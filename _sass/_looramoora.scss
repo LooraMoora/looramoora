@@ -1,0 +1,142 @@
+.align-center{
+	text-align: center;
+}
+
+canvas{
+  display:block;
+  vertical-align:bottom;
+}
+
+#particles-js#particles-js{
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	background-color: #ffffff;
+}
+
+h1{
+		font: $big $base-font-family-serif;
+		@media screen and (min-width: 768px) {
+			font: $huge $base-font-family-serif;
+		}
+}
+
+.site-nav{
+	height: 40px;
+	background: #fff;
+	ul {
+		width: 100%;
+    margin: 0;
+		li{
+      list-style: none;
+			width: 20%;
+			margin: 0 2.5%;
+			float: left;
+			text-align: center;
+			a{
+				/* -webkit-transition: all 0.6s;
+				transition: all 0.6s; */
+
+				font: $tiny $base-font-family-sansserif;
+				text-transform: uppercase;
+				padding-top: 20px;
+				color: $grey-color-middle;
+				&.page-link:before{
+					display: block;
+					content:"";
+					height: 12px;
+					width: 12px;
+					margin: 0 auto;
+					z-index: 1;
+					position: relative;
+				}
+				&.page-link-home:before{
+					background: url(../asset/icon-circle-tiny.png) no-repeat;
+					background-size: cover;
+				}
+				&.page-link-home:hover:before,
+				&.active.page-link-home:before{
+					background: url(../asset/icon-circle-pink-tiny.png) no-repeat;
+					background-size: cover;
+				}
+				&.page-link-works:before{
+					background: url(../asset/icon-square-tiny.png) no-repeat;
+					background-size: cover;
+				}
+				&.page-link-works:hover:before,
+				&.active.page-link-works:before{
+					background: url(../asset/icon-square-pink-tiny.png) no-repeat;
+					background-size: cover;
+				}
+				&.page-link-life:before{
+					background: url(../asset/icon-arrow-tiny.png) no-repeat;
+					background-size: cover;
+				}
+				&.page-link-life:hover:before,
+				&.active.page-link-life:before{
+					background: url(../asset/icon-arrow-pink-tiny.png) no-repeat;
+					background-size: cover;
+				}
+				&.page-link-about:before{
+					background: url(../asset/icon-line-tiny.png) no-repeat;
+					background-size: cover;
+				}
+				&.page-link-about:hover:before,
+				&.active.page-link-about:before{
+					background: url(../asset/icon-line-pink-tiny.png) no-repeat;
+					background-size: cover;
+				}
+				&.page-link-contact:before{
+					background: url(../asset/icon-plus-tiny.png) no-repeat;
+					background-size: cover;
+				}
+				&.page-link-contact:hover:before{
+					background: url(../asset/icon-plus-pink-tiny.png) no-repeat;
+					background-size: cover;
+				}
+				&:hover,
+				&.active{
+					color: $grey-color-strong;
+          text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+.photo{
+		width: 80px;
+		height: 80px;
+		background: url(../asset/photo.png) no-repeat;
+		background-size: 80px 80px;
+		margin: 0 auto 32px;
+}
+
+/*
+.content-home{
+	background: url(../asset/rectangle.png) no-repeat top;
+	background-size: contain;
+}
+*/
+
+.claim{
+  text-align: center;
+	margin-top: 20px;
+	padding-top: 10px;
+	@include media-query($on-laptop) {
+		padding-top: 40px;
+	}
+}
+
+.name-footer{
+	font: $normal $base-font-family-serif;
+}
+
+.social-link{
+	color: $grey-color-middle;
+	font: $small $base-font-family-sansserif;
+	a{
+		color: $grey-color-middle;
+	}
+}

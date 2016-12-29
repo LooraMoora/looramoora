@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div class="col-sm-8 col-sm-offset-2">
+
+  <h1 class="page-heading">Works</h1>
+
+  <ul class="post-list work-list">
+    {% for work in site.works reversed %}
+      <li>
+        <a class="work-link" href="{{ work.url | prepend: site.baseurl }}">
+          <img width="520" src="{{ work.image}}" />
+          <div class="work-detail">
+            <h2>{{ work.title }}</h2>
+            <p class="work-meta">{{ work.year }}</p>
+          </div>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+
+
+</div>
