@@ -6,22 +6,9 @@
 </description>
     <link>127.0.0.1:4000/</link>
     <atom:link href="127.0.0.1:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 02 Jan 2017 11:22:38 +0100</pubDate>
-    <lastBuildDate>Mon, 02 Jan 2017 11:22:38 +0100</lastBuildDate>
+    <pubDate>Mon, 02 Jan 2017 11:30:17 +0100</pubDate>
+    <lastBuildDate>Mon, 02 Jan 2017 11:30:17 +0100</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
-    
-      <item>
-        <title>Welcome to Jekyll!</title>
-        <description>
-</description>
-        <pubDate>Sat, 14 May 2016 19:26:56 +0200</pubDate>
-        <link>127.0.0.1:4000/jekyll/welcome-to-jekyll</link>
-        <guid isPermaLink="true">127.0.0.1:4000/jekyll/welcome-to-jekyll</guid>
-        
-        
-        <category>jekyll</category>
-        
-      </item>
     
   </channel>
 </rss>
