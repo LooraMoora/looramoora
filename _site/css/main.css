@@ -76,9 +76,10 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: #ed545d;
   text-decoration: none;
-  position: relative; }
-  a:visited {
-    color: #f4999f; }
+  position: relative;
+  /*&:visited {
+      color: lighten($brand-color, 15%);
+  }*/ }
   a:hover {
     color: #f4999f; }
 

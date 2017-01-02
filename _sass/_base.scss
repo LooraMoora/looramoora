@@ -102,9 +102,9 @@ a {
     text-decoration: none;
     position: relative;
 
-    &:visited {
+    /*&:visited {
         color: lighten($brand-color, 15%);
-    }
+    }*/
 
     &:hover {
         color: lighten($brand-color, 15%);
